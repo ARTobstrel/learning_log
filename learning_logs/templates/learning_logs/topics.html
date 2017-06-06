@@ -11,5 +11,7 @@
             <li>No topics have been added yet.</li>
         {% endfor %}
     </ul>
-
+    <form action="{% url 'learning_logs:new_topic' %}" method="get">
+        <button name="submit">Add a new topic</button>
+    </form>
 {% endblock content %}
