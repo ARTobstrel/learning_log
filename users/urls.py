@@ -11,4 +11,7 @@ urlpatterns = [
 
     #Страница выхода
     url(r'^logout/$', views.logout_view, name='logout'),
+
+    #Страница регистрации
+    url(r'^register/$', views.register, name='register'),
 ]
