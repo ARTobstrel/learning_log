@@ -12,6 +12,7 @@ def index(request):
     """Домашняя страница приложения Learning_Log"""
     return render(request, 'learning_logs/index.html')
 
+@login_required
 def topics(request):
     """Выводит список тем"""
     topics = Topic.objects.filter(owner=request.user).order_by('date_added')

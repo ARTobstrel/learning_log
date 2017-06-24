@@ -1,4 +1,4 @@
-11_env
+11_env/
 .idea
 *.pyc
 *.sqlite3
