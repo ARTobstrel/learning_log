@@ -144,8 +144,10 @@ if os.getcwd() == '/app':
     #Поддержка заголовка 'X-Forwarded-Proto' для request.is_secure().
     SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
-    #Разрешены все заголовки хостов.
-    ALLOWED_HOSTS = ['*']
+    #Хостом проекта может быть только Heroku.
+    ALLOWED_HOSTS = ['artobstrel-log.herokuapp.com']
+    
+    DEBUG = False
 
     #Конфигурация статических ресурсов
     BASE_DIR = os.path.dirname(os.path.abspath(__file__))
